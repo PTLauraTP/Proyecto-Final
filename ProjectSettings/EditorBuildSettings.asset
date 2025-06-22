@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu UI.unity
+    guid: 315ed088bfd78a24f91b7ebfd3b033d3
+  - enabled: 1
+    path: Assets/Scenes/Bloqueo.unity
+    guid: 91e7104982d25894c93370a5eedd32f1
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
