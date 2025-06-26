@@ -14,14 +14,26 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject pantallaGanaste;
     [SerializeField] GameObject pantallaPerdiste;
+    public static GameManager instance;
+
+    void Awake() { instance = this; }
 
     private float tiempoRestante;
-    private bool juegoActivo = true;
+    public bool juegoActivo = false;
+
+    private float segundos;
+    private float minutos;
 
     void Start()
     {
         tiempoRestante = tiempoInicial;
-        juegoActivo = true;
+        if (tiempoRestante >= 60)
+        {
+            minutos = tiempoRestante/60;
+            segundos = tiempoRestante - minutos * 60;
+            actualizarTemporizador();
+        }
+        
         pantallaGanaste.SetActive(false);
         pantallaPerdiste.SetActive(false);
 
@@ -33,26 +45,41 @@ public class GameManager : MonoBehaviour
             cc.enabled = true;
         }
     }
-
+    void actualizarTemporizador()
+    {
+        string ceroTexto = segundos <=9.5f ? "0" : null;
+        if(segundos <= 0)
+        {
+            segundos = 60;
+            minutos--;
+        }
+        string tiempoNuevo = minutos.ToString("F0") + ":" + ceroTexto+ segundos.ToString("F0");
+        textoContador.text = tiempoNuevo;
+    }
+    public void activarLogica()
+    {
+        juegoActivo = true;
+    }
     void Update()
     {
-        if (!juegoActivo)
+        if (juegoActivo==false)
+        return;
+        
+        actualizarTemporizador();
+        segundos -= Time.deltaTime;
+
+        //textoContador.text = "Tiempo: " + tiempoRestante.ToString("F0"); //numero sin decimales
+
+        if (segundos<=0 && minutos <=0)
         {
-            return;
-        }
-
-        tiempoRestante -= Time.deltaTime;
-
-        textoContador.text = "Tiempo: " + tiempoRestante.ToString("F0"); //numero sin decimales
-
-        if (tiempoRestante <= 0)
-        {
-            tiempoRestante = 0; // Para que no muestre números negativos
-            textoContador.text = "Tiempo: 0";
+            segundos = 0; // Para que no muestre números negativos
             PerderJuego();
         }
     }
-
+    public void setRegeneracion(Transform nuevoGuardado)
+    {
+        puntoDeInicio = nuevoGuardado;
+    }
     public void RespawnJugador()
     {
         //juego terminado no hacer nada
