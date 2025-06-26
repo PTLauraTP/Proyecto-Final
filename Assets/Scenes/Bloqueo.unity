@@ -72586,6 +72586,87 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1395117989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1395117990}
+  - component: {fileID: 1395117992}
+  - component: {fileID: 1395117993}
+  m_Layer: 8
+  m_Name: RigidCollid
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1395117990
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395117989}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 272993188152429408}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1395117992
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395117989}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &1395117993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395117989}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2624652, y: 0.2525165, z: 0.2624652}
+  m_Center: {x: 0, y: 0.0895139, z: 0}
 --- !u!43 &1400492109
 Mesh:
   m_ObjectHideFlags: 0
@@ -102647,6 +102728,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7158657708993604825}
+  - component: {fileID: 7158657708993604827}
+  - component: {fileID: 7158657708993604826}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.049
   m_TagString: Untagged
@@ -103325,6 +103408,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7898439673160253256}
+  - {fileID: 1395117990}
   m_Father: {fileID: 3893294199639930361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275376912868755231
@@ -103336,6 +103420,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3858248161373199169}
+  - component: {fileID: 3858248161373199171}
+  - component: {fileID: 3858248161373199170}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.013
   m_TagString: Untagged
@@ -103370,6 +103456,9 @@ GameObject:
   - component: {fileID: 1398618388552961404}
   - component: {fileID: 2050809774002333531}
   - component: {fileID: 1079662024499092678}
+  - component: {fileID: 2050809774002333533}
+  - component: {fileID: 2050809774002333532}
+  - component: {fileID: 2050809774002333534}
   m_Layer: 0
   m_Name: Cube.008
   m_TagString: Untagged
@@ -103386,6 +103475,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5358781004443110110}
+  - component: {fileID: 5358781004443110112}
+  - component: {fileID: 5358781004443110111}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.051
   m_TagString: Untagged
@@ -104085,6 +104176,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9027320048351276217}
+  - component: {fileID: 9027320048351276219}
+  - component: {fileID: 9027320048351276218}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.026
   m_TagString: Untagged
@@ -104136,8 +104229,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1586433015}
-  - {fileID: 344820094}
   - {fileID: 37175841}
+  - {fileID: 344820094}
   - {fileID: 1254563770}
   - {fileID: 411715651}
   - {fileID: 773265261}
@@ -104793,6 +104886,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1033014795174282217}
+  - component: {fileID: 1033014795174282219}
+  - component: {fileID: 1033014795174282218}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp
   m_TagString: Untagged
@@ -104919,6 +105014,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1065861212903995085}
+  - component: {fileID: 1065861212903995087}
+  - component: {fileID: 1065861212903995086}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.020
   m_TagString: Untagged
@@ -105030,6 +105127,7 @@ GameObject:
   - component: {fileID: 972039891977620281}
   - component: {fileID: 7514561376994202703}
   - component: {fileID: 5603975023754694817}
+  - component: {fileID: 7514561376994202704}
   m_Layer: 0
   m_Name: Column_box_bottom.008
   m_TagString: Untagged
@@ -105046,6 +105144,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7773827782086246445}
+  - component: {fileID: 7773827782086246447}
+  - component: {fileID: 7773827782086246446}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.003
   m_TagString: Untagged
@@ -105352,6 +105452,7 @@ GameObject:
   - component: {fileID: 7668611505961485815}
   - component: {fileID: 1630956372442217172}
   - component: {fileID: 2487645012888455081}
+  - component: {fileID: 7668611505961485816}
   m_Layer: 0
   m_Name: Column_box_bottom.012
   m_TagString: Untagged
@@ -105469,6 +105570,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5099533828634141660}
+  - component: {fileID: 5099533828634141662}
+  - component: {fileID: 5099533828634141661}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.021
   m_TagString: Untagged
@@ -105825,6 +105928,41 @@ Transform:
   - {fileID: 2512340004593644603}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033014795174282218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726242702076680933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &1033014795174282219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726242702076680933}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &1046378087102442328
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -106049,6 +106187,41 @@ Transform:
   - {fileID: 8825684063032773231}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065861212903995086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761917904087947482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &1065861212903995087
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761917904087947482}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &1066235067757572926
 Transform:
   m_ObjectHideFlags: 0
@@ -106550,6 +106723,7 @@ GameObject:
   - component: {fileID: 5159031476773991711}
   - component: {fileID: 7742942807458091816}
   - component: {fileID: 4914970656620383821}
+  - component: {fileID: 7742942807458091817}
   m_Layer: 0
   m_Name: Column_box_bottom.009
   m_TagString: Untagged
@@ -106905,7 +107079,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 3.3453739, z: 68.191025}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -107327,6 +107501,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4073106300604926704}
+  - component: {fileID: 4073106300604926706}
+  - component: {fileID: 4073106300604926705}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.044
   m_TagString: Untagged
@@ -107343,6 +107519,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9207722957649778541}
+  - component: {fileID: 9207722957649778543}
+  - component: {fileID: 9207722957649778542}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.027
   m_TagString: Untagged
@@ -107496,6 +107674,9 @@ GameObject:
   - component: {fileID: 4865064390925512971}
   - component: {fileID: 8897240366671845470}
   - component: {fileID: 3129779574142394530}
+  - component: {fileID: 8897240366671845472}
+  - component: {fileID: 8897240366671845471}
+  - component: {fileID: 8897240366671845473}
   m_Layer: 0
   m_Name: Cube.004
   m_TagString: Untagged
@@ -107662,6 +107843,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2016155667426711948}
+  - component: {fileID: 2016155667426711950}
+  - component: {fileID: 2016155667426711949}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.022
   m_TagString: Untagged
@@ -108883,6 +109066,41 @@ Transform:
   - {fileID: 1553070533468076801}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2016155667426711949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634812589987788238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &2016155667426711950
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634812589987788238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &2017875807234124488
 GameObject:
   m_ObjectHideFlags: 0
@@ -108920,6 +109138,7 @@ GameObject:
   - component: {fileID: 6508736128602532185}
   - component: {fileID: 1349920960614443525}
   - component: {fileID: 2166987342980169419}
+  - component: {fileID: 6508736128602532186}
   m_Layer: 0
   m_Name: Column_box_bottom.007
   m_TagString: Untagged
@@ -109032,6 +109251,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281855665062216755}
   m_Mesh: {fileID: 8552134717624371188, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!114 &2050809774002333532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281855665062216755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &2050809774002333533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281855665062216755}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.9126841, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &2050809774002333534
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281855665062216755}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &2058979909777428483
 Transform:
   m_ObjectHideFlags: 0
@@ -109084,6 +109365,9 @@ GameObject:
   - component: {fileID: 7967766325537094404}
   - component: {fileID: 8482381505848403919}
   - component: {fileID: 8418640413925779866}
+  - component: {fileID: 8482381505848403921}
+  - component: {fileID: 8482381505848403920}
+  - component: {fileID: 8482381505848403922}
   m_Layer: 0
   m_Name: Cube.003
   m_TagString: Untagged
@@ -109773,6 +110057,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7473434117169566991}
+  - component: {fileID: 7473434117169566993}
+  - component: {fileID: 7473434117169566992}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.040
   m_TagString: Untagged
@@ -109994,6 +110280,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5955987639597942821}
+  - component: {fileID: 5955987639597942823}
+  - component: {fileID: 5955987639597942822}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.030
   m_TagString: Untagged
@@ -110660,6 +110948,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7756815340753639284}
+  - component: {fileID: 7756815340753639286}
+  - component: {fileID: 7756815340753639285}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.032
   m_TagString: Untagged
@@ -110778,6 +111068,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2686275466364954806}
+  - component: {fileID: 2686275466364954808}
+  - component: {fileID: 2686275466364954807}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.012
   m_TagString: Untagged
@@ -110859,6 +111151,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3124708898865133485}
+  - component: {fileID: 3124708898865133487}
+  - component: {fileID: 3124708898865133486}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.024
   m_TagString: Untagged
@@ -110998,6 +111292,41 @@ Transform:
   - {fileID: 6660233198136152498}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2686275466364954807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590824008575379460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &2686275466364954808
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590824008575379460}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &2693308912468002269
 Transform:
   m_ObjectHideFlags: 0
@@ -112157,6 +112486,41 @@ Transform:
   - {fileID: 6526390923434159479}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3124708898865133486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630048866736068530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3124708898865133487
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2630048866736068530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &3129779574142394530
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -112300,6 +112664,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1631889116548948511}
+  - component: {fileID: 3174232541836319142}
+  - component: {fileID: 3174232541836319141}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.056
   m_TagString: Untagged
@@ -112307,6 +112673,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3174232541836319141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174232541836319140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3174232541836319142
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3174232541836319140}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &3180033022002573132
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -112495,6 +112896,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 996957456332849820}
+  - component: {fileID: 3221654148518648213}
+  - component: {fileID: 3221654148518648212}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.039
   m_TagString: Untagged
@@ -112502,6 +112905,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3221654148518648212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221654148518648211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3221654148518648213
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221654148518648211}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &3226021818097315287
 Transform:
   m_ObjectHideFlags: 0
@@ -112725,6 +113163,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2441861462199025628}
+  - component: {fileID: 3294329362596188720}
+  - component: {fileID: 3294329362596188719}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.005
   m_TagString: Untagged
@@ -112732,6 +113172,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3294329362596188719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3294329362596188718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3294329362596188720
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3294329362596188718}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &3300334355469617867
 Transform:
   m_ObjectHideFlags: 0
@@ -113363,6 +113838,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1763742635947093380}
+  - component: {fileID: 3492822060253401248}
+  - component: {fileID: 3492822060253401247}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.033
   m_TagString: Untagged
@@ -113370,6 +113847,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3492822060253401247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492822060253401246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3492822060253401248
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492822060253401246}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &3509001726523787468
 Transform:
   m_ObjectHideFlags: 0
@@ -113565,6 +114077,7 @@ GameObject:
   - component: {fileID: 9114711644872409718}
   - component: {fileID: 3997446637276296396}
   - component: {fileID: 2251732309877505799}
+  - component: {fileID: 9114711644872409719}
   m_Layer: 0
   m_Name: Column_box_bottom.014
   m_TagString: Untagged
@@ -113591,6 +114104,7 @@ GameObject:
   - component: {fileID: 4450018526698936248}
   - component: {fileID: 6973103994995423784}
   - component: {fileID: 3193210354193513561}
+  - component: {fileID: 6973103994995423785}
   m_Layer: 0
   m_Name: Column_box_bottom.006
   m_TagString: Untagged
@@ -113974,6 +114488,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2943489391234565934}
+  - component: {fileID: 3701228257218669372}
+  - component: {fileID: 3701228257218669371}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.057
   m_TagString: Untagged
@@ -113981,6 +114497,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3701228257218669371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701228257218669370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3701228257218669372
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3701228257218669370}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &3709738705606376373
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -114173,6 +114724,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7831007596004576815}
+  - component: {fileID: 7831007596004576817}
+  - component: {fileID: 7831007596004576816}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.055
   m_TagString: Untagged
@@ -114249,6 +114802,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7503391816894021114}
+  - component: {fileID: 7503391816894021116}
+  - component: {fileID: 7503391816894021115}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.046
   m_TagString: Untagged
@@ -114322,6 +114877,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 834152537741256220}
+  - component: {fileID: 3849413320701598179}
+  - component: {fileID: 3849413320701598178}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.058
   m_TagString: Untagged
@@ -114329,6 +114886,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3849413320701598178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849413320701598177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3849413320701598179
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3849413320701598177}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &3858248161373199169
 Transform:
   m_ObjectHideFlags: 0
@@ -114345,6 +114937,41 @@ Transform:
   - {fileID: 1454256874235735889}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3858248161373199170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275376912868755231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &3858248161373199171
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275376912868755231}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &3859947755714161560
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -114428,6 +115055,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7518798323946455544}
+  - component: {fileID: 7518798323946455546}
+  - component: {fileID: 7518798323946455545}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.041
   m_TagString: Untagged
@@ -114952,6 +115581,7 @@ GameObject:
   - component: {fileID: 8982024802134506800}
   - component: {fileID: 543201143528506617}
   - component: {fileID: 8843225046908316580}
+  - component: {fileID: 8982024802134506801}
   m_Layer: 0
   m_Name: Column_box_bottom.005
   m_TagString: Untagged
@@ -115185,6 +115815,41 @@ Transform:
   - {fileID: 1804651780696112704}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4073106300604926705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522334142661849876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &4073106300604926706
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522334142661849876}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &4083501151096771477
 Transform:
   m_ObjectHideFlags: 0
@@ -115284,6 +115949,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3288014087044295393}
+  - component: {fileID: 4109173968246714158}
+  - component: {fileID: 4109173968246714157}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.043
   m_TagString: Untagged
@@ -115291,6 +115958,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4109173968246714157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109173968246714156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &4109173968246714158
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4109173968246714156}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &4124702805270118070
 Transform:
   m_ObjectHideFlags: 0
@@ -115315,6 +116017,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1589976366611227713}
+  - component: {fileID: 4126098014961644869}
+  - component: {fileID: 4126098014961644868}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.052
   m_TagString: Untagged
@@ -115322,6 +116026,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4126098014961644868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126098014961644867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &4126098014961644869
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126098014961644867}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &4127316761185860067
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -115448,6 +116187,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 957639202746731549}
+  - component: {fileID: 4133420124544087769}
+  - component: {fileID: 4133420124544087768}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.025
   m_TagString: Untagged
@@ -115455,6 +116196,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4133420124544087768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133420124544087767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &4133420124544087769
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133420124544087767}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4187845430851538784
 GameObject:
   m_ObjectHideFlags: 0
@@ -115879,6 +116655,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6451064090620730764}
+  - component: {fileID: 6451064090620730766}
+  - component: {fileID: 6451064090620730765}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.035
   m_TagString: Untagged
@@ -115979,7 +116757,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 4.069902, z: 116.54111}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -116142,6 +116920,7 @@ GameObject:
   - component: {fileID: 9178094924267273755}
   - component: {fileID: 5116106276010340687}
   - component: {fileID: 50747364340350337}
+  - component: {fileID: 9178094924267273756}
   m_Layer: 0
   m_Name: Column_box_bottom.001
   m_TagString: Untagged
@@ -116530,7 +117309,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 3.3453739, z: 69.8114}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -116644,6 +117423,7 @@ GameObject:
   - component: {fileID: 6971866316436811389}
   - component: {fileID: 5548752081864140821}
   - component: {fileID: 7966578962188074817}
+  - component: {fileID: 7966578962188074818}
   m_Layer: 0
   m_Name: Column_box_bottom.010
   m_TagString: Untagged
@@ -116695,6 +117475,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5490882647636580743}
+  - component: {fileID: 5490882647636580745}
+  - component: {fileID: 5490882647636580744}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.015
   m_TagString: Untagged
@@ -117077,6 +117859,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5188916940888715672}
+  - component: {fileID: 5188916940888715674}
+  - component: {fileID: 5188916940888715673}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.010
   m_TagString: Untagged
@@ -117212,6 +117996,7 @@ GameObject:
   - component: {fileID: 4686711889893184054}
   - component: {fileID: 7130837837877729825}
   - component: {fileID: 9102038733625058857}
+  - component: {fileID: 9102038733625058858}
   m_Layer: 0
   m_Name: Column_box_bottom
   m_TagString: Untagged
@@ -117983,7 +118768,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 3.5291584, z: 83.09982}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -118187,6 +118972,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7500935948500531986}
+  - component: {fileID: 7500935948500531988}
+  - component: {fileID: 7500935948500531987}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.006
   m_TagString: Untagged
@@ -118295,6 +119082,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7298551633387928366}
+  - component: {fileID: 7298551633387928368}
+  - component: {fileID: 7298551633387928367}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.048
   m_TagString: Untagged
@@ -118449,6 +119238,7 @@ GameObject:
   - component: {fileID: 5670071217772847263}
   - component: {fileID: 6872041686457280940}
   - component: {fileID: 6408604954270401634}
+  - component: {fileID: 6872041686457280941}
   m_Layer: 0
   m_Name: Column_box_bottom.015
   m_TagString: Untagged
@@ -118473,6 +119263,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1101651949787541394}
+  - component: {fileID: 4978693093175207851}
+  - component: {fileID: 4978693093175207850}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.028
   m_TagString: Untagged
@@ -118480,6 +119272,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4978693093175207850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978693093175207849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &4978693093175207851
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978693093175207849}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4989215256578263810
 GameObject:
   m_ObjectHideFlags: 0
@@ -118742,6 +119569,41 @@ Transform:
   - {fileID: 7668346700855257279}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5099533828634141661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937010401958953549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5099533828634141662
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937010401958953549}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5101296900888961235
 GameObject:
   m_ObjectHideFlags: 0
@@ -118824,6 +119686,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4707527583958726158}
+  - component: {fileID: 5124071624511240515}
+  - component: {fileID: 5124071624511240514}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.036
   m_TagString: Untagged
@@ -118831,6 +119695,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5124071624511240514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5124071624511240513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5124071624511240515
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5124071624511240513}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &5124262144384857521
 Transform:
   m_ObjectHideFlags: 0
@@ -118857,6 +119756,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7914631860421705254}
+  - component: {fileID: 7914631860421705256}
+  - component: {fileID: 7914631860421705255}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.018
   m_TagString: Untagged
@@ -119005,6 +119906,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 132563186499145870}
+  - component: {fileID: 5159823574532610292}
+  - component: {fileID: 5159823574532610291}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.004
   m_TagString: Untagged
@@ -119012,6 +119915,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5159823574532610291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159823574532610290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5159823574532610292
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5159823574532610290}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &5163139798365122808
 Transform:
   m_ObjectHideFlags: 0
@@ -119165,6 +120103,41 @@ Transform:
   - {fileID: 5802834071051370511}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5188916940888715673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4629595685931801723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5188916940888715674
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4629595685931801723}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &5194334308984264177
 GameObject:
   m_ObjectHideFlags: 0
@@ -119434,6 +120407,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6698027662834675852}
+  - component: {fileID: 6698027662834675854}
+  - component: {fileID: 6698027662834675853}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.014
   m_TagString: Untagged
@@ -119669,6 +120644,41 @@ Transform:
   - {fileID: 7384980020091670282}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5358781004443110111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281856300221329058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5358781004443110112
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281856300221329058}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &5365545137818042962
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -119745,6 +120755,7 @@ GameObject:
   - component: {fileID: 3953027189768293273}
   - component: {fileID: 6293442130772258552}
   - component: {fileID: 999635365011450252}
+  - component: {fileID: 6293442130772258553}
   m_Layer: 0
   m_Name: Column_box_bottom.003
   m_TagString: Untagged
@@ -120045,6 +121056,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 751817372708348582}
+  - component: {fileID: 5427904073180260254}
+  - component: {fileID: 5427904073180260253}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.054
   m_TagString: Untagged
@@ -120052,6 +121065,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5427904073180260253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427904073180260252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5427904073180260254
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427904073180260252}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &5434305854738671063
 Transform:
   m_ObjectHideFlags: 0
@@ -120228,6 +121276,41 @@ Transform:
   - {fileID: 1900787358049274307}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5490882647636580744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4522215407738155696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5490882647636580745
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4522215407738155696}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &5491632027093544195
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120322,6 +121405,7 @@ GameObject:
   - component: {fileID: 4560815798462305446}
   - component: {fileID: 2483639069221784144}
   - component: {fileID: 3795100795972447924}
+  - component: {fileID: 5534128024677669261}
   m_Layer: 0
   m_Name: Column_box_bottom.011
   m_TagString: Untagged
@@ -120329,6 +121413,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5534128024677669261
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534128024677669260}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6777355873152607771, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!33 &5534483136894481100
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -120676,7 +121782,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 3.3452451, z: 66.57472}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -121049,6 +122155,7 @@ GameObject:
   - component: {fileID: 627466860047615417}
   - component: {fileID: 1895814095075948050}
   - component: {fileID: 7497017252632267197}
+  - component: {fileID: 7497017252632267198}
   m_Layer: 0
   m_Name: Column_box_bottom.002
   m_TagString: Untagged
@@ -121468,7 +122575,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 3.7145562, z: 94.78646}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -121489,6 +122596,41 @@ Transform:
   - {fileID: 4037470977607071348}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5955987639597942822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2364352872590844939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &5955987639597942823
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2364352872590844939}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &5973957522575573574
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -121812,6 +122954,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6531082266462373345}
+  - component: {fileID: 6531082266462373347}
+  - component: {fileID: 6531082266462373346}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.007
   m_TagString: Untagged
@@ -122088,6 +123232,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6560990676023994316}
+  - component: {fileID: 6560990676023994318}
+  - component: {fileID: 6560990676023994317}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.038
   m_TagString: Untagged
@@ -122153,6 +123299,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 39682995444480917}
+  - component: {fileID: 6236112305717726116}
+  - component: {fileID: 6236112305717726115}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.034
   m_TagString: Untagged
@@ -122160,6 +123308,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6236112305717726115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236112305717726114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6236112305717726116
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236112305717726114}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &6242504844431686254
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -122229,6 +123412,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4246400129463859139}
+  - component: {fileID: 6255894405172701698}
+  - component: {fileID: 6255894405172701697}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.045
   m_TagString: Untagged
@@ -122236,6 +123421,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6255894405172701697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6255894405172701696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6255894405172701698
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6255894405172701696}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &6256634601080081916
 Transform:
   m_ObjectHideFlags: 0
@@ -122516,6 +123736,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5376214506589754391}
+  m_Mesh: {fileID: 5309824782492603120, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!64 &6293442130772258553
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376214506589754391}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 5309824782492603120, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!23 &6294062970593854953
 MeshRenderer:
@@ -122907,6 +124149,41 @@ Transform:
   - {fileID: 2357544772327902785}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6451064090620730765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275335396484817498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6451064090620730766
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275335396484817498}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &6454790903149513934
 Transform:
   m_ObjectHideFlags: 0
@@ -123033,6 +124310,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 344820094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &6508736128602532186
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020272009376167570}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8447388572446725347, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!4 &6510683672835889038
 Transform:
   m_ObjectHideFlags: 0
@@ -123165,6 +124464,41 @@ Transform:
   - {fileID: 7095687104959158020}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6531082266462373346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075373848191816619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6531082266462373347
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6075373848191816619}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6532487327265094055
 GameObject:
   m_ObjectHideFlags: 0
@@ -123273,6 +124607,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4718044135668027423}
+  - component: {fileID: 6545883874434869139}
+  - component: {fileID: 6545883874434869138}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.002
   m_TagString: Untagged
@@ -123280,6 +124616,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6545883874434869138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545883874434869137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6545883874434869139
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545883874434869137}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6547448887758816314
 GameObject:
   m_ObjectHideFlags: 0
@@ -123340,6 +124711,41 @@ Transform:
   - {fileID: 795745889982585134}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6560990676023994317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6156548777045873928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6560990676023994318
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6156548777045873928}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &6574460011080501581
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -123693,6 +125099,41 @@ Transform:
   - {fileID: 6345717670301247327}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6698027662834675853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254924603478189416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6698027662834675854
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254924603478189416}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6704279677239803167
 GameObject:
   m_ObjectHideFlags: 0
@@ -124055,6 +125496,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2922856432962634641}
+  - component: {fileID: 6809377847759220274}
+  - component: {fileID: 6809377847759220273}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.008
   m_TagString: Untagged
@@ -124062,6 +125505,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6809377847759220273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809377847759220272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6809377847759220274
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6809377847759220272}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &6810757781140080676
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -124144,6 +125622,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4097101769102848120}
+  - component: {fileID: 6868297120994132650}
+  - component: {fileID: 6868297120994132649}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.031
   m_TagString: Untagged
@@ -124151,6 +125631,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6868297120994132649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6868297120994132648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &6868297120994132650
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6868297120994132648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &6872041686457280940
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -124158,6 +125673,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4973335815702367843}
+  m_Mesh: {fileID: 7404491789114564276, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!64 &6872041686457280941
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4973335815702367843}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: 7404491789114564276, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!1 &6875752333463743332
 GameObject:
@@ -124491,6 +126028,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7783290780302804715}
+  - component: {fileID: 7783290780302804717}
+  - component: {fileID: 7783290780302804716}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.001
   m_TagString: Untagged
@@ -124638,6 +126177,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3596994330054681253}
+  m_Mesh: {fileID: -6493291381541953378, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!64 &6973103994995423785
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3596994330054681253}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -6493291381541953378, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!23 &6982602038080606580
 MeshRenderer:
@@ -124851,6 +126412,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7282752374146088621}
+  - component: {fileID: 7282752374146088623}
+  - component: {fileID: 7282752374146088622}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.019
   m_TagString: Untagged
@@ -125189,7 +126752,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 4.069902, z: 118.16148}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -125412,6 +126975,41 @@ Transform:
   - {fileID: 5124262144384857521}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7158657708993604826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112613761383963237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7158657708993604827
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112613761383963237}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &7162286986751401940
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -125480,6 +127078,9 @@ GameObject:
   - component: {fileID: 4418473097693304228}
   - component: {fileID: 215592838318851099}
   - component: {fileID: 1558643249103522761}
+  - component: {fileID: 7178114112645352910}
+  - component: {fileID: 7178114112645352912}
+  - component: {fileID: 7178114112645352911}
   m_Layer: 0
   m_Name: Cube.009
   m_TagString: Untagged
@@ -125487,6 +127088,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7178114112645352910
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178114112645352908}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.956165, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &7178114112645352911
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178114112645352908}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &7178114112645352912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178114112645352908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
 --- !u!1 &7181989433802859741
 GameObject:
   m_ObjectHideFlags: 0
@@ -125496,6 +127159,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3610157482237655932}
+  - component: {fileID: 7181989433802859743}
+  - component: {fileID: 7181989433802859742}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.009
   m_TagString: Untagged
@@ -125503,6 +127168,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7181989433802859742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181989433802859741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7181989433802859743
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7181989433802859741}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7183117985739474528
 GameObject:
   m_ObjectHideFlags: 0
@@ -125849,6 +127549,41 @@ Transform:
   - {fileID: 1693381828706825361}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7282752374146088622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023852239372176223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7282752374146088623
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7023852239372176223}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &7285224430494390989
 Transform:
   m_ObjectHideFlags: 0
@@ -125898,6 +127633,41 @@ Transform:
   - {fileID: 2676997112019260715}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7298551633387928367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938190771182943256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7298551633387928368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938190771182943256}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &7299266722269588655
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -125975,6 +127745,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1723820718323719710}
+  - component: {fileID: 7316009096696747896}
+  - component: {fileID: 7316009096696747895}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.016
   m_TagString: Untagged
@@ -125982,6 +127754,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7316009096696747895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316009096696747894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7316009096696747896
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316009096696747894}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &7329811487968383256
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -126178,6 +127985,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1488795475060397433}
+  - component: {fileID: 7382822318824652541}
+  - component: {fileID: 7382822318824652540}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.050
   m_TagString: Untagged
@@ -126185,6 +127994,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7382822318824652540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382822318824652539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7382822318824652541
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382822318824652539}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &7383332933077562369
 Transform:
   m_ObjectHideFlags: 0
@@ -126347,6 +128191,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6672089582430131940}
+  - component: {fileID: 7442609222448969986}
+  - component: {fileID: 7442609222448969985}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.017
   m_TagString: Untagged
@@ -126354,6 +128200,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7442609222448969985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442609222448969984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7442609222448969986
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442609222448969984}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &7459054816794431251
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -126409,6 +128290,41 @@ Transform:
   - {fileID: 7195553669310000811}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7473434117169566992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259955642240384410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7473434117169566993
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2259955642240384410}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!23 &7477211707028830293
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -126535,6 +128451,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7497017252632267198
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5804987033144071222}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7659113017017748334, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!4 &7500935948500531986
 Transform:
   m_ObjectHideFlags: 0
@@ -126551,6 +128489,41 @@ Transform:
   - {fileID: 7593443780866305518}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7500935948500531987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4896275155714731588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7500935948500531988
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4896275155714731588}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &7503391816894021114
 Transform:
   m_ObjectHideFlags: 0
@@ -126567,6 +128540,41 @@ Transform:
   - {fileID: 5758405771366497310}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7503391816894021115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800067908473475295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7503391816894021116
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800067908473475295}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &7511627274106395785
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -126582,6 +128590,28 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810360652619451135}
+  m_Mesh: {fileID: -3295585173461855408, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!64 &7514561376994202704
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810360652619451135}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
   m_Mesh: {fileID: -3295585173461855408, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!4 &7518798323946455544
 Transform:
@@ -126599,6 +128629,41 @@ Transform:
   - {fileID: 2046245901451011377}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7518798323946455545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3889888314257929916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7518798323946455546
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3889888314257929916}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &7528363083724329368
 Transform:
   m_ObjectHideFlags: 0
@@ -126911,6 +128976,9 @@ GameObject:
   - component: {fileID: 4306643202677026197}
   - component: {fileID: 8401952775556878758}
   - component: {fileID: 7416691524403792215}
+  - component: {fileID: 8401952775556878760}
+  - component: {fileID: 8401952775556878759}
+  - component: {fileID: 8401952775556878761}
   m_Layer: 0
   m_Name: Cube.005
   m_TagString: Untagged
@@ -127128,6 +129196,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 37175841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7668611505961485816
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905440654067650195}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3557927105957672364, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!1 &7671645541742825855
 GameObject:
   m_ObjectHideFlags: 0
@@ -127420,6 +129510,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229754961829923130}
   m_Mesh: {fileID: -7059870832529251642, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!64 &7742942807458091817
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229754961829923130}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7059870832529251642, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!33 &7748643198199753489
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -127460,6 +129572,41 @@ Transform:
   - {fileID: 934929759418018668}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7756815340753639285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575543611259942921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7756815340753639286
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575543611259942921}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7757191961987654049
 GameObject:
   m_ObjectHideFlags: 0
@@ -127542,6 +129689,41 @@ Transform:
   - {fileID: 5893129136613110473}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7773827782086246446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812771709137459686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7773827782086246447
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812771709137459686}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7774906073782062024
 GameObject:
   m_ObjectHideFlags: 0
@@ -127576,6 +129758,41 @@ Transform:
   - {fileID: 6793191709237216312}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7783290780302804716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940552292629281302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7783290780302804717
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940552292629281302}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7792106758582202098
 GameObject:
   m_ObjectHideFlags: 0
@@ -127585,6 +129802,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8714111825154120008}
+  - component: {fileID: 8714111825154120010}
+  - component: {fileID: 8714111825154120009}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.042
   m_TagString: Untagged
@@ -127601,6 +129820,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210426133571113457}
+  - component: {fileID: 7797544657626516336}
+  - component: {fileID: 7797544657626516335}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.023
   m_TagString: Untagged
@@ -127608,6 +129829,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7797544657626516335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797544657626516334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7797544657626516336
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7797544657626516334}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7802957483260770454
 GameObject:
   m_ObjectHideFlags: 0
@@ -127717,6 +129973,41 @@ Transform:
   - {fileID: 5329321161756799334}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7831007596004576816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774502100495274623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7831007596004576817
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3774502100495274623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7833040509736949113
 GameObject:
   m_ObjectHideFlags: 0
@@ -127726,6 +130017,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 386103302028934617}
+  - component: {fileID: 7833040509736949115}
+  - component: {fileID: 7833040509736949114}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.037
   m_TagString: Untagged
@@ -127733,6 +130026,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7833040509736949114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833040509736949113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7833040509736949115
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7833040509736949113}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7835422217007297168
 GameObject:
   m_ObjectHideFlags: 0
@@ -128018,6 +130346,41 @@ Transform:
   - {fileID: 2398820187567864122}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7914631860421705255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125065640267000965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &7914631860421705256
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5125065640267000965}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &7917249717247306161
 GameObject:
   m_ObjectHideFlags: 0
@@ -128303,6 +130666,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7966578962188074818
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4489220587024856678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2110271640141191025, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!4 &7967766325537094404
 Transform:
   m_ObjectHideFlags: 0
@@ -128313,7 +130698,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 3.5291584, z: 81.47945}
-  m_LocalScale: {x: -6.7515864, y: -0.8068673, z: -0.73903686}
+  m_LocalScale: {x: 6.751586, y: 0.8068673, z: 0.7390369}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 538772654}
@@ -128860,6 +131245,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310895327027283371}
+  - component: {fileID: 8310895327027283373}
+  - component: {fileID: 8310895327027283372}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.053
   m_TagString: Untagged
@@ -128896,6 +131283,7 @@ GameObject:
   - component: {fileID: 5563182568280330114}
   - component: {fileID: 2396824306643943317}
   - component: {fileID: 2445168165130841740}
+  - component: {fileID: 8212406686794856684}
   m_Layer: 0
   m_Name: Column_box_bottom.013
   m_TagString: Untagged
@@ -128903,6 +131291,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8212406686794856684
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8212406686794856683}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8263373755721396228, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!1 &8218982063908095357
 GameObject:
   m_ObjectHideFlags: 0
@@ -128912,6 +131322,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8473889304241981414}
+  - component: {fileID: 8473889304241981416}
+  - component: {fileID: 8473889304241981415}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.047
   m_TagString: Untagged
@@ -128984,6 +131396,41 @@ Transform:
   - {fileID: 8651486357645481937}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8310895327027283372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209245151388700497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &8310895327027283373
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8209245151388700497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &8322255485271233297
 Transform:
   m_ObjectHideFlags: 0
@@ -129532,6 +131979,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7623545440406531099}
   m_Mesh: {fileID: 2212009239438826721, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!114 &8401952775556878759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623545440406531099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &8401952775556878760
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623545440406531099}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.8892947, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &8401952775556878761
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7623545440406531099}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &8415692798077181304
 Transform:
   m_ObjectHideFlags: 0
@@ -129558,6 +132067,9 @@ GameObject:
   - component: {fileID: 5680519944063779037}
   - component: {fileID: 3010172806459289396}
   - component: {fileID: 8544783547861919529}
+  - component: {fileID: 8544783547861919531}
+  - component: {fileID: 8544783547861919530}
+  - component: {fileID: 8544783547861919532}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: Untagged
@@ -129715,6 +132227,41 @@ Transform:
   - {fileID: 5919313720547560942}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8473889304241981415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218982063908095357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &8473889304241981416
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218982063908095357}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!33 &8475202720211657952
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -129739,6 +132286,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076850630730853525}
   m_Mesh: {fileID: -8678823145569952518, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!114 &8482381505848403920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076850630730853525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &8482381505848403921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076850630730853525}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.8632779, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &8482381505848403922
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076850630730853525}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8485173162730383004
 GameObject:
   m_ObjectHideFlags: 0
@@ -129768,6 +132377,7 @@ GameObject:
   - component: {fileID: 7285224430494390989}
   - component: {fileID: 2611320041186917381}
   - component: {fileID: 8498743522479538064}
+  - component: {fileID: 8498743522479538065}
   m_Layer: 0
   m_Name: Column_box_bottom.004
   m_TagString: Untagged
@@ -129915,6 +132525,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8498743522479538065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485338154691890260}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7095613139065983076, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!1 &8500186547226975092
 GameObject:
   m_ObjectHideFlags: 0
@@ -130266,6 +132898,68 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8544783547861919530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416272008584184065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &8544783547861919531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416272008584184065}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.8837215, z: 1.9999996}
+  m_Center: {x: 0, y: -0.001834197, z: 2.2531937e-18}
+--- !u!54 &8544783547861919532
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8416272008584184065}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &8550375823223105379
 Transform:
   m_ObjectHideFlags: 0
@@ -130670,6 +133364,41 @@ Transform:
   - {fileID: 5447400456835096732}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8714111825154120009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792106758582202098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &8714111825154120010
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792106758582202098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &8721104079834914109
 GameObject:
   m_ObjectHideFlags: 0
@@ -130717,6 +133446,9 @@ GameObject:
   - component: {fileID: 7129599248727307045}
   - component: {fileID: 8894691112190099430}
   - component: {fileID: 6745302439987103531}
+  - component: {fileID: 8894691112190099432}
+  - component: {fileID: 8894691112190099431}
+  - component: {fileID: 8894691112190099433}
   m_Layer: 0
   m_Name: Cube.006
   m_TagString: Untagged
@@ -131239,6 +133971,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8757042445206102912}
   m_Mesh: {fileID: -2228417370725966487, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!114 &8894691112190099431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757042445206102912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &8894691112190099432
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757042445206102912}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.8094219, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &8894691112190099433
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8757042445206102912}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!33 &8897240366671845470
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -131247,6 +134041,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582813066682536070}
   m_Mesh: {fileID: -5053925668127403250, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
+--- !u!114 &8897240366671845471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582813066682536070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &8897240366671845472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582813066682536070}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.8681197, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &8897240366671845473
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582813066682536070}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!23 &8901953215597233175
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -131446,6 +134302,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 344820094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8982024802134506801
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4018772919421365257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7949818969418939756, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!23 &8983117420595040580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -131497,6 +134375,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1206076526873761768}
+  - component: {fileID: 9002369450274807800}
+  - component: {fileID: 9002369450274807799}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.011
   m_TagString: Untagged
@@ -131504,6 +134384,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9002369450274807799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002369450274807798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &9002369450274807800
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9002369450274807798}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &9006581041001975269
 Transform:
   m_ObjectHideFlags: 0
@@ -131546,6 +134461,9 @@ GameObject:
   - component: {fileID: 5949365507876739849}
   - component: {fileID: 1703912658820925965}
   - component: {fileID: 8102382928547045215}
+  - component: {fileID: 9014776605650985849}
+  - component: {fileID: 9014776605650985848}
+  - component: {fileID: 9014776605650985850}
   m_Layer: 0
   m_Name: Cube.007
   m_TagString: Untagged
@@ -131553,6 +134471,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9014776605650985848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014776605650985847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561f6ce5a27331a47a229c34fc8b479d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoParaCaer: 0.1
+  tiempoParaDestruirse: 1
+--- !u!65 &9014776605650985849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014776605650985847}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.9999999, y: 1.9078648, z: 1.9999996}
+  m_Center: {x: -0, y: 0, z: 0}
+--- !u!54 &9014776605650985850
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9014776605650985847}
+  serializedVersion: 4
+  m_Mass: 100
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9017328541530767225
 GameObject:
   m_ObjectHideFlags: 0
@@ -131595,6 +134575,41 @@ Transform:
   - {fileID: 4820291334708147872}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9027320048351276218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535987691928499550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &9027320048351276219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535987691928499550}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9029242940972712884
 GameObject:
   m_ObjectHideFlags: 0
@@ -131732,6 +134747,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9102038733625058858
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4654027481928435543}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7345857984482242111, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!4 &9102220764352923975
 Transform:
   m_ObjectHideFlags: 0
@@ -131780,6 +134817,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 37175841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9114711644872409719
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575412039722007057}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -514108521162937426, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!4 &9117387225751744880
 Transform:
   m_ObjectHideFlags: 0
@@ -131855,6 +134914,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5666803846790039044}
+  - component: {fileID: 9154867477573097357}
+  - component: {fileID: 9154867477573097356}
   m_Layer: 0
   m_Name: Abstract Sci-Fi Twisted Floor Lamp.029
   m_TagString: Untagged
@@ -131862,6 +134923,41 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9154867477573097356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9154867477573097355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &9154867477573097357
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9154867477573097355}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &9155229258422219177
 GameObject:
   m_ObjectHideFlags: 0
@@ -131963,6 +135059,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 344820094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &9178094924267273756
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4346796834588255100}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3413646828630441065, guid: e6c97316bcaef3348b2a9f39f224c80a, type: 3}
 --- !u!33 &9180072932132767069
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -132042,6 +135160,41 @@ Transform:
   - {fileID: 1815185146780273396}
   m_Father: {fileID: 1586433015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9207722957649778542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524318849646754705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af1cc2b870969c408d2d455594e1727, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 1825303402}
+--- !u!64 &9207722957649778543
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524318849646754705}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!4 &9213472315719412596
 Transform:
   m_ObjectHideFlags: 0
@@ -132104,10 +135257,10 @@ SceneRoots:
   - {fileID: 3893294199639930361}
   - {fileID: 746329221}
   - {fileID: 5226203432431967431}
-  - {fileID: 1157150491}
   - {fileID: 543450653034735375}
   - {fileID: 1825303403}
   - {fileID: 1751491088}
   - {fileID: 1387043304}
   - {fileID: 4083501151096771477}
   - {fileID: 1162976477}
+  - {fileID: 1157150491}
