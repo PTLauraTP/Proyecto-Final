@@ -30,7 +30,9 @@ public class GameManager : MonoBehaviour
         if (tiempoRestante >= 60)
         {
             minutos = tiempoRestante/60;
-            segundos = tiempoRestante - minutos * 60;
+            Debug.Log(minutos);
+            segundos = tiempoRestante % 60;
+            Debug.Log(segundos);
             actualizarTemporizador();
         }
         
@@ -47,13 +49,14 @@ public class GameManager : MonoBehaviour
     }
     void actualizarTemporizador()
     {
-        string ceroTexto = segundos <=9.5f ? "0" : null;
-        if(segundos <= 0)
+        
+        if(segundos < 0)
         {
-            segundos = 60;
+            segundos = 59;
             minutos--;
         }
-        string tiempoNuevo = minutos.ToString("F0") + ":" + ceroTexto+ segundos.ToString("F0");
+        string ceroTexto = segundos <= 9.5f ? "0" : null;
+        string tiempoNuevo = minutos.ToString("F0") + ":" + ceroTexto +segundos.ToString("F0");
         textoContador.text = tiempoNuevo;
     }
     public void activarLogica()
