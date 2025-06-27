@@ -111,7 +111,9 @@ namespace StarterAssets
         private const float _threshold = 0.01f;
 
         private bool _hasAnimator;
+        [SerializeField] Animator mianimador;
         [SerializeField] float velocidadConstante;
+        bool quieto = false;
         private bool IsCurrentDeviceMouse
         {
             get
@@ -127,6 +129,7 @@ namespace StarterAssets
 
         private void Awake()
         {
+            
             // get a reference to our main camera
             if (_mainCamera == null)
             {
@@ -158,10 +161,13 @@ namespace StarterAssets
         private void Update()
         {
             _hasAnimator = TryGetComponent(out _animator);
-
-            JumpAndGravity();
+            mianimador.SetFloat("vely", _verticalVelocity);
+           
+             JumpAndGravity();
             GroundedCheck();
+        
             Move();
+            
         }
 
         private void LateUpdate()
@@ -271,25 +277,28 @@ namespace StarterAssets
             //Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
             if (_input.move.y != -1 || tiempoMaximoQuieto <=0) {
                 // move the player
-                Debug.Log("hola viste que si entro y no apretaste y");
+                quieto = false;
                 if(tiempoEsperaQuieto >= 1f)
                 {
                     tiempoMaximoQuieto = 2f;
                 }
-                
+                FootstepAudioVolume = 0.5f;
                 //_controller.Move(new Vector3(0f,0f,velocidadConstante *Time.deltaTime));
-                
             }
-            else
+              else
             {
                 tiempoEsperaQuieto = 0;
                 tiempoMaximoQuieto -= Time.deltaTime;
                 _speed = 0;
+                FootstepAudioVolume = 0;
+                quieto = true;
+
             }
             Vector3 targetDirection = new Vector3(_input.move.x, 0f, transform.forward.z);
             _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
                              new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
             tiempoEsperaQuieto += Time.deltaTime;
+            mianimador.SetBool("idle", quieto);
             // update animator if using character
             if (_hasAnimator)
             {
@@ -300,11 +309,13 @@ namespace StarterAssets
 
         private void JumpAndGravity()
         {
+            
             if (Grounded)
             {
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;
 
+                //mianimador.SetBool("saltado", false);
                 // update animator if using character
                 if (_hasAnimator)
                 {
@@ -321,14 +332,21 @@ namespace StarterAssets
                 // Jump
                 if (_input.jump && _jumpTimeoutDelta <= 0.0f)
                 {
+                    mianimador.SetBool("saltando", true);
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+
+
 
                     // update animator if using character
                     if (_hasAnimator)
                     {
                         _animator.SetBool(_animIDJump, true);
                     }
+                }
+                else if (_verticalVelocity <= -2f)
+                {
+                    mianimador.SetBool("saltando", false);
                 }
 
                 // jump timeout
@@ -349,6 +367,7 @@ namespace StarterAssets
                 }
                 else
                 {
+                   
                     // update animator if using character
                     if (_hasAnimator)
                     {
