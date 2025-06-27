@@ -164322,6 +164322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1825303402}
+  puntoFinal: {fileID: 0}
 --- !u!33 &6961855933543777665
 MeshFilter:
   m_ObjectHideFlags: 0

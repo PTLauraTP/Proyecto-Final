@@ -34,7 +34,8 @@ public class PlataformaFalsa : MonoBehaviour
         yield return new WaitForSeconds(tiempoParaCaer);
 
         miCuerpo.isKinematic = false;
-        
+        miCuerpo.mass =30;
+        miCuerpo.useGravity = true;
         yield return new WaitForSeconds(tiempoParaDestruirse);
         Destroy(gameObject);
     }
