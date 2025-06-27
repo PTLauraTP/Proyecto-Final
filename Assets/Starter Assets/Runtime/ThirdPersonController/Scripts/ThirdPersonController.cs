@@ -113,6 +113,7 @@ namespace StarterAssets
         private bool _hasAnimator;
         [SerializeField] Animator mianimador;
         [SerializeField] float velocidadConstante;
+        float controlesvuelta = 1;
         bool quieto = false;
         private bool IsCurrentDeviceMouse
         {
@@ -294,7 +295,7 @@ namespace StarterAssets
                 quieto = true;
 
             }
-            Vector3 targetDirection = new Vector3(_input.move.x, 0f, transform.forward.z);
+            Vector3 targetDirection = new Vector3(_input.move.x * controlesvuelta, 0f, transform.forward.z);
             _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
                              new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
             tiempoEsperaQuieto += Time.deltaTime;
@@ -306,7 +307,10 @@ namespace StarterAssets
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
         }
-
+        public void modificarControlX()
+        {
+            controlesvuelta = -1f;
+        }
         private void JumpAndGravity()
         {
             
