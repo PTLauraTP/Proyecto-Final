@@ -25,7 +25,7 @@ public class controladorEnemigo : MonoBehaviour
             
             ParticleSystem.Play();
             coliderhijo.enabled = true;
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(4f);
             coliderhijo.enabled = false ;
             ParticleSystem.Stop();
             yield return new WaitForSeconds(3f);

@@ -10,7 +10,7 @@ public class ZonaDeVictoria : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            gameManager.GanarJuego();
+            GameManager.instance.CambiarModoJuego();
         }
     }
 }

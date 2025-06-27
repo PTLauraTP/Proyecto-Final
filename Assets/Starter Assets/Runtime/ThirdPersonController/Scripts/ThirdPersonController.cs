@@ -79,6 +79,8 @@ namespace StarterAssets
         private float _cinemachineTargetYaw;
         private float _cinemachineTargetPitch;
 
+        [SerializeField] float tiempoMaximoQuieto = 2f;
+        [SerializeField] float tiempoEsperaQuieto = 1f;
         // player
         private float _speed;
         private float _animationBlend;
@@ -150,6 +152,7 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
+            
         }
 
         private void Update()
@@ -255,7 +258,7 @@ namespace StarterAssets
             // if there is a move input rotate player when the player is moving
             //if (_input.move.x != 0)
             //{
-            // _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
+            //_targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg +
             // _mainCamera.transform.eulerAngles.y;
             //float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
             // RotationSmoothTime);
@@ -266,13 +269,27 @@ namespace StarterAssets
 
 
             //Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
-
-            // move the player
-            //_controller.Move(new Vector3(0f,0f,velocidadConstante *Time.deltaTime));
-            Vector3 targetDirection = new Vector3(_input.move.x, 0f, 1f);
+            if (_input.move.y != -1 || tiempoMaximoQuieto <=0) {
+                // move the player
+                Debug.Log("hola viste que si entro y no apretaste y");
+                if(tiempoEsperaQuieto >= 1f)
+                {
+                    tiempoMaximoQuieto = 2f;
+                }
+                
+                //_controller.Move(new Vector3(0f,0f,velocidadConstante *Time.deltaTime));
+                
+            }
+            else
+            {
+                tiempoEsperaQuieto = 0;
+                tiempoMaximoQuieto -= Time.deltaTime;
+                _speed = 0;
+            }
+            Vector3 targetDirection = new Vector3(_input.move.x, 0f, transform.forward.z);
             _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
                              new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
-
+            tiempoEsperaQuieto += Time.deltaTime;
             // update animator if using character
             if (_hasAnimator)
             {

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject pantallaGanaste;
     [SerializeField] GameObject pantallaPerdiste;
     public static GameManager instance;
+    [SerializeField] bool retorno = false;
 
     void Awake() { instance = this; }
 
@@ -78,6 +79,12 @@ public class GameManager : MonoBehaviour
             segundos = 0; // Para que no muestre números negativos
             PerderJuego();
         }
+    }
+    public void CambiarModoJuego()
+    {
+        retorno = true;
+        jugador.transform.rotation = Quaternion.Euler(0.0f, 180f, 0.0f);
+       
     }
     public void setRegeneracion(Transform nuevoGuardado)
     {
