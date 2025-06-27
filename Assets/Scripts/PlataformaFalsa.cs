@@ -4,34 +4,37 @@ using UnityEngine;
 
 public class PlataformaFalsa : MonoBehaviour
 {
-    [SerializeField] float tiempoParaCaer;
+   [SerializeField] float tiempoParaCaer;
     [SerializeField] float tiempoParaDestruirse;
-
-    private Rigidbody cuerpo;
+    private Rigidbody miCuerpo;
     private bool haSidoActivada = false;
 
     void Awake()
     {
-        cuerpo = GetComponent<Rigidbody>();
-        cuerpo.isKinematic = true;  
-        cuerpo.useGravity = false;  
+        miCuerpo= GetComponent<Rigidbody>();
+        miCuerpo.isKinematic = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (!haSidoActivada && collision.gameObject.CompareTag("Player"))
+        
+        if (!haSidoActivada && other.gameObject.CompareTag("Player"))
         {
             haSidoActivada = true;
-            Debug.Log("Plataforma activad va a caer");
-            StartCoroutine(CaerConRetraso());
+            
+           
+            StartCoroutine(IniciarCaida());
         }
     }
 
-    private IEnumerator CaerConRetraso()
+    private IEnumerator IniciarCaida()
     {
+        Debug.Log("hola");
         yield return new WaitForSeconds(tiempoParaCaer);
-        cuerpo.isKinematic = false;
-        cuerpo.useGravity = true;
+
+        miCuerpo.isKinematic = false;
+        
         yield return new WaitForSeconds(tiempoParaDestruirse);
         Destroy(gameObject);
     }
