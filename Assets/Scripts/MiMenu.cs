@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MiMenu : MonoBehaviour
 {
+    [SerializeField] private GameObject botonPausa;
+    [SerializeField] private GameObject menuPausa;
     public void EmpezarJuego()
     {
         SceneManager.LoadScene("Bloqueo");
@@ -13,8 +15,21 @@ public class MiMenu : MonoBehaviour
     {
         Application.Quit();
     }
-    //public void IrMenu()
-    //{
-    //    SceneManager.LoadScene("Menu UI");
-    //}
+    public void IrPausa()
+    {
+        Time.timeScale = 0f;
+        botonPausa.SetActive(false);
+        menuPausa.SetActive(true);
+    }
+    public void SalirPausa()
+    {
+        Time.timeScale = 1f;
+        botonPausa.SetActive(true);
+        menuPausa.SetActive(false);
+    }
+    public void ReiniciarJuego()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
