@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject pantallaGanaste;
     [SerializeField] GameObject pantallaPerdiste;
+    [SerializeField] GameObject botonPausa;
     public static GameManager instance;
     [SerializeField] bool retorno = false;
 
@@ -37,7 +38,8 @@ public class GameManager : MonoBehaviour
             Debug.Log(segundos);
             actualizarTemporizador();
         }
-        
+
+        botonPausa.SetActive(true);
         pantallaGanaste.SetActive(false);
         pantallaPerdiste.SetActive(false);
 
@@ -120,6 +122,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("¡GANASTE!");
             juegoActivo = false;
             pantallaGanaste.SetActive(true);
+            botonPausa.SetActive(false);
             Time.timeScale = 0f;
         }
     }
@@ -131,6 +134,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("¡PERDISTE!");
             juegoActivo = false;
             pantallaPerdiste.SetActive(true);
+            botonPausa.SetActive(false);
             Time.timeScale = 0f;
         }
     }
