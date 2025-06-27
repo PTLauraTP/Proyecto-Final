@@ -98661,7 +98661,6 @@ MonoBehaviour:
   textoContador: {fileID: 401575732}
   pantallaGanaste: {fileID: 1927204484}
   pantallaPerdiste: {fileID: 1536410280}
-  retorno: 0
   juegoActivo: 0
 --- !u!4 &1825303403
 Transform:
@@ -125366,12 +125365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _miCuerpo: {fileID: 3858248161373199170}
   limiteIz: 0
-  limiteX: 12.5
+  target: {fileID: 0}
   negativo: -1
-  minVel: 0
-  maxVel: 0
   velocidad: 30
-  target: {x: 0, y: 0, z: 0}
 --- !u!23 &3859947755714161560
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -127424,8 +127420,6 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
-  tiempoMaximoQuieto: 2
-  tiempoEsperaQuieto: 1
   velocidadConstante: 6
 --- !u!143 &4416926083347132233
 CharacterController:
