@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro; 
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using StarterAssets;
 
 public class GameManager : MonoBehaviour
 {
@@ -84,6 +85,7 @@ public class GameManager : MonoBehaviour
     {
         retorno = true;
         jugador.transform.rotation = Quaternion.Euler(0.0f, 180f, 0.0f);
+        jugador.GetComponent<ThirdPersonController>().modificarControlX();
        
     }
     public void setRegeneracion(Transform nuevoGuardado)

@@ -5,12 +5,14 @@ using UnityEngine;
 public class ZonaDeVictoria : MonoBehaviour
 {
     [SerializeField] GameManager gameManager;
+    [SerializeField] GameObject puntoFinal;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             GameManager.instance.CambiarModoJuego();
+            puntoFinal.SetActive(true);
         }
     }
 }
