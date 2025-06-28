@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class ControlJugador : MonoBehaviour
 {
+    [SerializeField] ThirdPersonController miControlMovimiento;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class ControlJugador : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            this.GetComponent<ThirdPersonController>().enabled = true;
+            miControlMovimiento.enabled = true;
             GameManager.instance.activarLogica();
         }
     }
@@ -30,6 +31,11 @@ public class ControlJugador : MonoBehaviour
         if (collision.transform.CompareTag("enemigo"))
         {
             GameManager.instance.RespawnJugador();
+        }
+        if (collision.transform.CompareTag("victoria"))
+        {
+            GameManager.instance.GanarJuego();
+            miControlMovimiento.Celebrar();
         }
     }
 }

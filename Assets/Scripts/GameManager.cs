@@ -75,11 +75,10 @@ public class GameManager : MonoBehaviour
         actualizarTemporizador();
         segundos -= Time.deltaTime;
 
-        //textoContador.text = "Tiempo: " + tiempoRestante.ToString("F0"); //numero sin decimales
 
         if (segundos<=0 && minutos <=0)
         {
-            segundos = 0; // Para que no muestre números negativos
+            segundos = 0; 
             PerderJuego();
         }
     }
@@ -96,18 +95,17 @@ public class GameManager : MonoBehaviour
     }
     public void RespawnJugador()
     {
-        //juego terminado no hacer nada
+        
         if (!juegoActivo) return;
 
-        Debug.Log("Jugador ha caído. Reubicando...");
+
 
         CharacterController cc = jugador.GetComponent<CharacterController>();
         if (cc != null)
         {
-            cc.enabled = false; // desabilita el controlador
-            jugador.transform.position = puntoDeInicio.position; // Movemos el transform
-            jugador.transform.rotation = puntoDeInicio.rotation; // reseteamos la rotación
-            cc.enabled = true; // volvemos a habilitar el contrl
+            cc.enabled = false; 
+            jugador.transform.position = puntoDeInicio.position; 
+            cc.enabled = true; 
         }
         else
         {
@@ -119,12 +117,17 @@ public class GameManager : MonoBehaviour
     {
         if (juegoActivo)
         {
+            StartCoroutine(nameof(esperaCelebrar));
             Debug.Log("¡GANASTE!");
             juegoActivo = false;
             pantallaGanaste.SetActive(true);
             botonPausa.SetActive(false);
             Time.timeScale = 0f;
         }
+    }
+    IEnumerator esperaCelebrar()
+    {
+        yield return new WaitForSeconds(2);
     }
 
     public void PerderJuego()

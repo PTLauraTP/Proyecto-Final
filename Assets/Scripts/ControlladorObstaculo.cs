@@ -14,6 +14,7 @@ public class ControlladorObstaculo : MonoBehaviour
     [SerializeField] float maxVel;
     [SerializeField] float velocidad;
     [SerializeField] Vector3 target;
+    bool comprobador = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +31,15 @@ public class ControlladorObstaculo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, target) > 0.25f)
+        if (Vector3.Distance(transform.position, target) > 0.25f && comprobador ==false)
         {
-            Debug.Log("hola");
+            comprobador=true;
             _miCuerpo.velocity = new Vector3(velocidad * Time.deltaTime * negativo, 0f, 0f);
         }
         else
         {
-            
-            Debug.Log("Adios");
+
+            comprobador = false;
 
             negativo *= -1;
             limiteX *= negativo;

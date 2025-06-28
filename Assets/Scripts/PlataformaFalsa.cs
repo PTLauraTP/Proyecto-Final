@@ -30,7 +30,7 @@ public class PlataformaFalsa : MonoBehaviour
 
     private IEnumerator IniciarCaida()
     {
-        Debug.Log("hola");
+       
         yield return new WaitForSeconds(tiempoParaCaer);
 
         miCuerpo.isKinematic = false;

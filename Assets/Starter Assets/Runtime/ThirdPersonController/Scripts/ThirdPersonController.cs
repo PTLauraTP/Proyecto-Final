@@ -115,6 +115,7 @@ namespace StarterAssets
         [SerializeField] float velocidadConstante;
         float controlesvuelta = 1;
         bool quieto = false;
+        bool fin = false;
         private bool IsCurrentDeviceMouse
         {
             get
@@ -166,7 +167,7 @@ namespace StarterAssets
            
              JumpAndGravity();
             GroundedCheck();
-        
+            if (!fin)
             Move();
             
         }
@@ -301,11 +302,7 @@ namespace StarterAssets
             tiempoEsperaQuieto += Time.deltaTime;
             mianimador.SetBool("idle", quieto);
             // update animator if using character
-            if (_hasAnimator)
-            {
-                _animator.SetFloat(_animIDSpeed, _animationBlend);
-                _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
-            }
+            
         }
         public void modificarControlX()
         {
@@ -396,7 +393,12 @@ namespace StarterAssets
             if (lfAngle > 360f) lfAngle -= 360f;
             return Mathf.Clamp(lfAngle, lfMin, lfMax);
         }
-
+        public void Celebrar()
+        {
+            quieto = true;
+            fin = true;
+            mianimador.SetBool("celebrar", true);
+        }
         private void OnDrawGizmosSelected()
         {
             Color transparentGreen = new Color(0.0f, 1.0f, 0.0f, 0.35f);

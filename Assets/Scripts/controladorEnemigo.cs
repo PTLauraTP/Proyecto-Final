@@ -6,9 +6,12 @@ public class controladorEnemigo : MonoBehaviour
 {
     [SerializeField] ParticleSystem ParticleSystem;
     [SerializeField] Collider coliderhijo;
+    [SerializeField] AudioSource parlante;
+    float esperaRandom;
     // Start is called before the first frame update
     void Start()
     {
+        esperaRandom = Random.Range(1, 5);
         coliderhijo.enabled = false;
         StartCoroutine(nameof(ActivarFuego));
     }
@@ -20,13 +23,16 @@ public class controladorEnemigo : MonoBehaviour
     }
     IEnumerator ActivarFuego()
     {
+        yield return new WaitForSeconds(esperaRandom);
         while (true)
         {
             
             ParticleSystem.Play();
+            
+            parlante.Play();
+            yield return new WaitForSeconds(1f);
             coliderhijo.enabled = true;
             yield return new WaitForSeconds(4f);
-            
             ParticleSystem.Stop();
             yield return new WaitForSeconds(1f);
             coliderhijo.enabled = false;
@@ -37,7 +43,7 @@ public class controladorEnemigo : MonoBehaviour
     {
         if (other.transform.CompareTag("Player"))
         {
-            Debug.Log("toque al player");
+            
             GameManager.instance.RespawnJugador();
         }
     }
